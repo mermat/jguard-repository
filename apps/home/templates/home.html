@@ -1,0 +1,490 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+{#{% block title %}{% page_attribute "page_title" %}{% endblock title %}#}
+
+<div id="home" class="banner-area">
+    <div class="bg-image bg-parallax overlay" style="background-image:url({% static 'img/jguard19.jpg' %})"></div>
+    <div class="home-wrapper">
+        <div class="col-md-10 col-md-offset-1 text-center">
+            <div class="home-content">
+                <h2 class="white-text newfont">Welcome To J-Guard Cleaning!</h2>
+{#                <h4 class="white-text lead">Nec solet elaboraret eu, ea usu vidit accusam. Ea per legimus singulis percipitur. Graecis ullamcorper nec ex, vix euismod detraxit voluptaria at.</h4>#}
+                <h4 class="white-text lead">A complete cleaning solution for your home, office and vehicles</h4>
+                <a href="tel:8075317300"><button class="main-button yellow greyfont">Call Us : 8075317300</button></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="about" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="section-header text-center">
+                <h4 class="sub-title">About Us</h4>
+                <h2 class="title">J-Guard</h2>
+            </div>
+            <div class="col-md-5">
+                <h4 class="lead">Welcome To J-Guard Cleaning.A complete cleaning solution for your home, office and vehicles.</h4>
+            </div>
+
+            <div class="col-md-7">
+                <p>We at J-Guard, are a team of passionate professionals aimed at delivering best service to your belongings that seek assistance from us.
+                    We love our job as much as you love your belongings!Once handed over to us, we make sure that the best treatment is provided.</p>
+            </div>
+            <div class="col-md-12">
+                <div id="Gallery" class="owl-carousel owl-theme">
+                    <div class="Gallery-item">
+                        <div class="Gallery-img" style="background-image:url({% static 'img/jguard21.jpg' %})"></div>
+                    </div>
+                    <div class="Gallery-item">
+                        <div class="Gallery-img" style="background-image:url({% static 'img/jguard15.jpg' %})"></div>
+                        <div class="Gallery-img" style="background-image:url({% static 'img/jguard14.jpg' %})"></div>
+                    </div>
+                    <div class="Gallery-item">
+                        <div class="item-column">
+                            <div class="Gallery-img" style="background-image:url({% static 'img/jguard13.jpg' %})"></div>
+                            <div class="Gallery-img" style="background-image:url({% static 'img/sofa2.jpg' %})"></div>
+                        </div>
+                        <div class="item-column">
+                            <div class="Gallery-img" style="background-image:url({% static 'img/jguard11.jpg' %})"></div>
+                            <div class="Gallery-img" style="background-image:url({% static 'img/jguard10.jpg' %})"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="services" class="section">
+        <div class="bg-image bg-parallax overlay" style="background-image:url({% static 'img/jguard8.jpg' %})"></div>
+        <div class="container">
+            <div class="row">
+                <div class="section-header text-center">
+                    <h4 class="sub-title">Discover</h4>
+                    <h2 class="title white-text">Our Services</h2>
+                </div>
+                <ul class="menu-nav">
+                    <li class="active yellow"><a class="yellow" data-toggle="tab" href="#menu1">One-Time</a></li>
+                    <li><a data-toggle="tab" href="#menu2">Contract-Based</a></li>
+                    <li><a data-toggle="tab" href="#menu3">Maintenance</a></li>
+{#                    <li><a data-toggle="tab" href="#menu1">Others</a></li>#}
+                </ul>
+
+                <div id="menu-content" class="tab-content">
+                    <div id="menu1" class="tab-pane fade in active yellow">
+                        <div class="col-md-6">
+                            <div class="single-dish">
+                                <div class="single-dish-heading">
+                                    <h4 class="name">Basic Cleaning</h4>
+                                    <h4 class="price"><a href="tel:8075317300"><i class="fa fa-phone"></i></a></h4>
+                                </div>
+{#                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>#}
+                            </div>
+                            <div class="single-dish">
+                                <div class="single-dish-heading">
+                                    <h4 class="name">Deep Cleaning</h4>
+                                    <h4 class="price"><a href="tel:8075317300"><i class="fa fa-phone"></i></a></h4>
+
+                                </div>
+{#                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>#}
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="single-dish">
+                                <div class="single-dish-heading">
+                                    <h4 class="name">Spring Cleaning</h4>
+                                    <h4 class="price"><a href="tel:8075317300"><i class="fa fa-phone"></i></a></h4>
+                                </div>
+{#                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>#}
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu2" class="tab-pane fade in">
+                        <div class="col-md-6">
+                            <div class="single-dish">
+                                <div class="single-dish-heading">
+                                    <h4 class="name">Monthly Cleaning</h4>
+                                    <h4 class="price"><a href="tel:8075317300"><i class="fa fa-phone"></i></a></h4>
+                                </div>
+{#                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>#}
+                            </div>
+                            <div class="single-dish">
+                                <div class="single-dish-heading">
+                                    <h4 class="name">Quaterly Cleaning</h4>
+                                    <h4 class="price"><a href="tel:8075317300"><i class="fa fa-phone"></i></a></h4>
+
+                                </div>
+{#                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>#}
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="single-dish">
+                                <div class="single-dish-heading">
+                                    <h4 class="name">Yearly Cleaning</h4>
+                                    <h4 class="price"><a href="tel:8075317300"><i class="fa fa-phone"></i></a></h4>
+                                </div>
+{#                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>#}
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu3" class="tab-pane fade in">
+                        <div class="col-md-6">
+                            <div class="single-dish">
+                                <div class="single-dish-heading">
+                                    <h4 class="name">Electrical Maintenance</h4>
+                                    <h4 class="price"><a href="tel:8075317300"><i class="fa fa-phone"></i></a></h4>
+                                </div>
+{#                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>#}
+                            </div>
+                            <div class="single-dish">
+                                <div class="single-dish-heading">
+                                    <h4 class="name">Plumbing Maintenance</h4>
+                                    <h4 class="price"><a href="tel:8075317300"><i class="fa fa-phone"></i></a></h4>
+
+                                </div>
+{#                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>#}
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="single-dish">
+                                <div class="single-dish-heading">
+                                    <h4 class="name">Lawn Maintenance</h4>
+                                    <h4 class="price"><a href="tel:8075317300"><i class="fa fa-phone"></i></a></h4>
+                                </div>
+{#                                <p>te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</p>#}
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="write" class="section">
+        <div class="bg-image" style="background-image:url({% static 'img/jguard17.jpg' %})"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                    <form class="reserve-form row contact_form" novalidate action="{% url 'home' %}" method="post">
+                        <div class="section-header text-center">
+                            {#<h4 class="sub-title">Write</h4>#}
+                            <h2 class="title white-text">Write To Us</h2>
+                        </div>
+
+                        <div class="col-md-10">
+{#                            <div class="form-group">#}
+{#                                <label for="name">Name:</label>#}
+{#                                <input class="input" type="text" placeholder="Name" id="name">#}
+{#                            </div>#}
+{#                            <div class="form-group">#}
+{#                                <label for="phone">Phone:</label>#}
+{#                                <input class="input" type="tel" placeholder="Phone" id="phone">#}
+{#                            </div>#}
+{##}
+{#                            <div class="form-group"> {# added #}
+{#                                <label for="email">Email:</label>#}
+{#                                <input class="input" type="email" placeholder="Email" id="email">#}
+{#                            </div>#}
+{#                             <div class="form-group">#}
+{#                                <label for="time">Message:</label>#}
+{#                                <input class="input" type="text" placeholder="Message" id="message">#}
+{#                            </div>#}
+
+                            {% csrf_token %}{{ form.non_field_errors }}
+                            {{ form.name.errors }}{{ form.name }}<br>
+                            {{ form.email.errors }}{{ form.email }}<br>
+                            {{ form.phone.errors }}{{ form.phone }}<br>
+                            {{ form.message.errors }}{{ form.message }}<br>
+
+{#                            <div class="form-group">#}
+{#                                <label for="date">Date:</label>#}
+{#                                <input class="input" type="text" placeholder="MM/DD/YYYY" id="date">#}
+{#                            </div>#}
+                        </div>
+{#                        <div class="col-md-6">#}
+{#                            <div class="form-group">#}
+{#                                <label for="email">Email:</label>#}
+{#                                <input class="input" type="email" placeholder="Email" id="email">#}
+{#                            </div>#}
+{#                            <div class="form-group">#}
+{#                                <label for="number">Number of Guests:</label>#}
+{#                                <select class="input" id="number">#}
+{#                                    <option>1 Person</option>#}
+{#                                    <option>2 People</option>#}
+{#                                    <option>3 People</option>#}
+{#                                    <option>4 People</option>#}
+{#                                    <option>5 People</option>#}
+{#                                    <option>6 People</option>#}
+{#                                </select>#}
+{#                            </div>#}
+{##}
+{#                            <div class="form-group">#}
+{#                                <label for="time">Time:</label>#}
+{#                                <input class="input" type="text" placeholder="HH:MM" id="time">#}
+{#                            </div>#}
+{#                        </div>#}
+
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="main-button">Send</button>
+{#                            <button type="submit" class="form_submission">Submit</button>#}
+                        <h4 class="white-text lead">{% for message in messages %}{{ message }}{% endfor %}</h4>
+
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                    <div class="opening-time row">
+                        <div class="section-header text-center">
+                            <h2 class="title white-text">Working Hours</h2>
+                        </div>
+                        <ul>
+                            <li>
+                                <h4 class="day">Sunday</h4>
+                                <h4 class="hours">24 hours</h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Monday</h4>
+                                <h4 class="hours">24 hours</h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Tuesday</h4>
+                                <h4 class="hours">24 hours</h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Wednesday</h4>
+                                <h4 class="hours">24 hours</h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Thursday</h4>
+                                <h4 class="hours">24 hours</h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Friday</h4>
+                                <h4 class="hours">24 hours</h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Saturday</h4>
+                                <h4 class="hours">24 hours</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{#<!-- Events -->#}
+{##}
+{#<div id="events" class="section">#}
+{##}
+{##}
+{#<!-- container -->#}
+{##}
+{#<div class="container">#}
+{##}
+{##}
+{#<!-- row -->#}
+{##}
+{#<div class="row">#}
+{##}
+{##}
+{#<!-- section header -->#}
+{##}
+{#<div class="section-header text-center">#}
+{##}
+{#<h4 class="sub-title">Special Event</h4>#}
+{##}
+{#<h2 class="title">Upcoming Event</h2>#}
+{##}
+{#</div>#}
+{##}
+{#<!-- /section header -->#}
+{##}
+{##}
+{#<!-- single event -->#}
+{##}
+{#<div class="col-md-6">#}
+{##}
+{#<div class="event">#}
+{##}
+{#<div class="event-img">#}
+{##}
+{#<img src="{% static 'img/event01.jpg' %}" alt="">#}
+{##}
+{#<div class="event-day">#}
+{##}
+{#<span>08<br>July</span>#}
+{##}
+{#</div>#}
+{##}
+{#</div>#}
+{##}
+{#<div class="event-content">#}
+{##}
+{#<p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>#}
+{##}
+{#<h3><a href="blog.html">te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</a></h3>#}
+{##}
+{#<p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>#}
+{##}
+{#</div>#}
+{##}
+{#</div>#}
+{##}
+{#</div>#}
+{##}
+{#<!-- /single event -->#}
+{##}
+{##}
+{#<!-- single event -->#}
+{##}
+{#<div class="col-md-6">#}
+{##}
+{#<div class="event">#}
+{##}
+{#<div class="event-img">#}
+{##}
+{#<img src="{% static 'img/event02.jpg' %}" alt="">#}
+{##}
+{#<div class="event-day">#}
+{##}
+{#<span>08<br>July</span>#}
+{##}
+{#</div>#}
+{##}
+{#</div>#}
+{##}
+{#<div class="event-content">#}
+{##}
+{#<p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>#}
+{##}
+{#<h3><a href="#">te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</a></h3>#}
+{##}
+{#<p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>#}
+{##}
+{#</div>#}
+{##}
+{#</div>#}
+{##}
+{#</div>#}
+{##}
+{#<!-- /single event -->#}
+{##}
+{##}
+{#<!-- single event -->#}
+{##}
+{#<div class="col-md-6">#}
+{##}
+{#<div class="event">#}
+{##}
+{#<div class="event-img">#}
+{##}
+{#<img src="{% static 'img/event02.jpg' %}" alt="">#}
+{##}
+{#<div class="event-day">#}
+{##}
+{#<span>08<br>July</span>#}
+{##}
+{#</div>#}
+{##}
+{#</div>#}
+{##}
+{#<div class="event-content">#}
+{##}
+{#<p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>#}
+{##}
+{#<h3><a href="#">te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</a></h3>#}
+{##}
+{#<p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>#}
+{##}
+{#</div>#}
+{##}
+{#</div>#}
+{##}
+{#</div>#}
+{##}
+{#<!-- /single event -->#}
+{##}
+{##}
+{#<!-- single event -->#}
+{##}
+{#<div class="col-md-6">#}
+{##}
+{#<div class="event">#}
+{##}
+{#<div class="event-img">#}
+{##}
+{#<img src="./img/event01.jpg" alt="">#}
+{##}
+{#<div class="event-day">#}
+{##}
+{#<span>08<br>July</span>#}
+{##}
+{#</div>#}
+{##}
+{#</div>#}
+{##}
+{#<div class="event-content">#}
+{##}
+{#<p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>#}
+{##}
+{#<h3><a href="#">te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</a></h3>#}
+{##}
+{#<p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>#}
+{##}
+{#</div>#}
+{##}
+{#</div>#}
+{##}
+{#</div>#}
+{##}
+{#<!-- /single event -->#}
+{##}
+{##}
+{#</div>#}
+{##}
+{#<!-- /row -->#}
+{##}
+{##}
+{#</div>#}
+{##}
+{#<!-- /container -->#}
+{##}
+{##}
+{#</div>#}
+{##}
+{#<!-- /Events -->#}
+
+    <div id="contact" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-7">
+                    <div class="section-header">
+                        <h4 class="sub-title">Contact Us</h4>
+                        <h2 class="title">Get In Touch</h2>
+                    </div>
+                    <div class="contact-content">
+                        <p>Feel Free To Contact Us Anytime Anywhere!</p>
+                        <h3>Tel: <a href="tel:8075317300">8075317300</a></h3>
+                        <p>Address: J-Guard, Opp. Vennala UP School, Vennala-682028</p>
+                        <p>Email: <a href="#">jguard.services@gmail.com</a></p>
+                        <ul class="list-inline">
+                            <li><p>Follow Us:</p></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+{#                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>#}
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+{% endblock content %}

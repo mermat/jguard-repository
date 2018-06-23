@@ -1,0 +1,16 @@
+#common
+*.pyc
+.idea
+.jpg
+*~
+*.swp
+*.env
+
+#project
+local_settings.py
+#database
+db.sqlite3
+jguard_db
+# media
+/static
+/media
