@@ -81,6 +81,17 @@ WSGI_APPLICATION = 'jguard.wsgi.application'
 #     }
 # }
 
+#staging
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'urban_prod',
+        'USER': 'u_urban',
+        'PASSWORD': '123',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
