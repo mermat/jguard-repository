@@ -85,9 +85,12 @@ WSGI_APPLICATION = 'jguard.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'urban_prod',
-        'USER': 'u_urban',
-        'PASSWORD': '123',
+        'NAME': os.environ.get('DATABASE_NAME'),
+        # 'NAME': 'urban_prod',
+        'USER': os.environ.get('USER'),
+        # 'USER': 'u_urban',
+        'PASSWORD': os.environ.get('PASSWORD'),
+        # 'PASSWORD': '123',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -147,4 +150,4 @@ EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'jguard.services@gmail.com'
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
