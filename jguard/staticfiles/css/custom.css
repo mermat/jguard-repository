@@ -11,3 +11,8 @@
 /*.greyfont {*/
 	/*color:#56565b;*/
 /*}*/
+
+.mob{
+	object-fit: cover;
+	background-size: contain;
+}
