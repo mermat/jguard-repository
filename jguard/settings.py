@@ -25,7 +25,7 @@ SECRET_KEY = 'u#0wkfsjq!p%s0n_xn+o)k1v)0lczwyv+1!**zvz8#azjp8rle'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.j-guard.com','206.189.129.82','0.0.0.0:8000']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
