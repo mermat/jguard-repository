@@ -11,6 +11,7 @@ from django.contrib.sites.shortcuts import get_current_site
 from .forms import ContactForm
 from .models import Contact
 
+
 class HomeView(generic.CreateView):
     model = Contact
     form_class = ContactForm
@@ -25,6 +26,18 @@ class HomeView(generic.CreateView):
         to_email = form.email
         email = EmailMessage(
                     mail_subject, message, to=[to_email]
+        )
+        email.send()
+
+        mail_subject = 'J-Guard : Enquiry Received!'
+        message = render_to_string('contact.html', {
+            'user': form.name,
+            'message': form.message,
+            'phone': form.phone,
+            'email': form.email,
+        })
+        email = EmailMessage(
+                    mail_subject, message, to=['jguard.services@gmail.com', 'mermat07@gmail.com']
         )
         email.send()
 
