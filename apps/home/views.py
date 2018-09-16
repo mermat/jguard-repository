@@ -29,20 +29,19 @@ class HomeView(generic.CreateView):
         )
         email.send()
 
-        mail_subject = 'J-Guard : Enquiry Received!'
-        message = render_to_string('contact.html', {
+        mail_subject2 = 'J-Guard : Enquiry Received!'
+        message2 = render_to_string('contact.html', {
             'user': form.name,
             'message': form.message,
             'phone': form.phone,
             'email': form.email,
         })
-        email = EmailMessage(
-                    mail_subject, message, to=['jguard.services@gmail.com', 'mermat07@gmail.com']
+        email2 = EmailMessage(
+                    mail_subject2, message2, to=['jguard.services@gmail.com', 'mermat07@gmail.com']
         )
-        email.send()
+        email2.send()
 
         form.save()
-        # full_url = ''.join(['http://', get_current_site(self.request).domain])
         messages.success(self.request, "Oh Great! Your Response Has Been Recorded!")
         return HttpResponseRedirect('#write')
 
