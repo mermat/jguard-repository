@@ -17,5 +17,5 @@ class ContactForm(forms.ModelForm):
             self.fields[field].widget.attrs['class'] = 'form-control'
         self.fields['name'].widget.attrs['placeholder'] = 'Name [required]'
         self.fields['email'].widget.attrs['placeholder'] = 'Email [required]'
-        self.fields['phone'].widget.attrs['placeholder'] = 'Phone'
+        self.fields['phone'].widget.attrs['placeholder'] = 'Phone [required]'
         self.fields['message'].widget.attrs['placeholder'] = 'Message [required]'
