@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
+from django.utils.translation import ugettext_lazy as _
 from django.utils import timezone
 
 
@@ -9,6 +10,10 @@ class Category(models.Model):
     """
     name = models.CharField(max_length=50)
     created_on = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        verbose_name = _('Category')
+        verbose_name_plural = _('Categories')
 
     def __str__(self):
         return self.name

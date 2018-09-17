@@ -246,25 +246,25 @@
 <div class="row">
 <div class="section-header text-center">
 
-<h2 class="title">Recent Posts</h2>
+{#<h2 class="title">Recent Posts</h2>#}
 
 </div>
 
-    {% post_list as posts %}
-    {% for post in posts %}
-    <div class="col-md-4">
-        <div class="post">
-            <a class="post-img" href="blog-post.html"><img src={{ post.image.url }} alt=""></a>
-            <div class="post-body">
-                <div class="post-meta">
-                    <a class="post-category cat-2" href="category.html">{{ post.category.name }}</a>
-                    <span class="post-date">March 27, 2018</span>
-                </div>
-                <h3 class="post-title"><a href="blog-post.html">{{ post.title }}</a></h3>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
+{#    {% post_list as posts %}#}
+{#    {% for post in posts %}#}
+{#    <div class="col-md-4">#}
+{#        <div class="post">#}
+{#            <a class="post-img" href="blog-post.html"><img src={{ post.image.url }} alt=""></a>#}
+{#            <div class="post-body">#}
+{#                <div class="post-meta">#}
+{#                    <a class="post-category cat-2" href="category.html">{{ post.category.name }}</a>#}
+{#                    <span class="post-date">March 27, 2018</span>#}
+{#                </div>#}
+{#                <h3 class="post-title"><a href="blog-post.html">{{ post.title }}</a></h3>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#    {% endfor %}#}
 </div>
 </div>
 
