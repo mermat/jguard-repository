@@ -1,8 +1,9 @@
 from django.urls import path
 
+from blog.views import BlogListView
 from .views import HomeView
-    # ContactView
 
 urlpatterns = [
-    path(r'', HomeView.as_view(), name='home'),
+    path('', HomeView.as_view(), name='home'),
+    path('blog/', BlogListView.as_view(), name='blog'),
 ]

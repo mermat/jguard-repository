@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load blog_tag %}
 {% load staticfiles %}
 {% block content %}
 {#{% block title %}{% page_attribute "page_title" %}{% endblock title %}#}
@@ -180,23 +181,6 @@
                         </div>
 
                         <div class="col-md-10">
-{#                            <div class="form-group">#}
-{#                                <label for="name">Name:</label>#}
-{#                                <input class="input" type="text" placeholder="Name" id="name">#}
-{#                            </div>#}
-{#                            <div class="form-group">#}
-{#                                <label for="phone">Phone:</label>#}
-{#                                <input class="input" type="tel" placeholder="Phone" id="phone">#}
-{#                            </div>#}
-{##}
-{#                            <div class="form-group"> {# added #}
-{#                                <label for="email">Email:</label>#}
-{#                                <input class="input" type="email" placeholder="Email" id="email">#}
-{#                            </div>#}
-{#                             <div class="form-group">#}
-{#                                <label for="time">Message:</label>#}
-{#                                <input class="input" type="text" placeholder="Message" id="message">#}
-{#                            </div>#}
 
                             {% csrf_token %}{{ form.non_field_errors }}
                             {{ form.name.errors }}{{ form.name }}<br>
@@ -204,34 +188,7 @@
                             {{ form.phone.errors }}{{ form.phone }}<br>
                             {{ form.message.errors }}{{ form.message }}<br>
 
-{#                            <div class="form-group">#}
-{#                                <label for="date">Date:</label>#}
-{#                                <input class="input" type="text" placeholder="MM/DD/YYYY" id="date">#}
-{#                            </div>#}
                         </div>
-{#                        <div class="col-md-6">#}
-{#                            <div class="form-group">#}
-{#                                <label for="email">Email:</label>#}
-{#                                <input class="input" type="email" placeholder="Email" id="email">#}
-{#                            </div>#}
-{#                            <div class="form-group">#}
-{#                                <label for="number">Number of Guests:</label>#}
-{#                                <select class="input" id="number">#}
-{#                                    <option>1 Person</option>#}
-{#                                    <option>2 People</option>#}
-{#                                    <option>3 People</option>#}
-{#                                    <option>4 People</option>#}
-{#                                    <option>5 People</option>#}
-{#                                    <option>6 People</option>#}
-{#                                </select>#}
-{#                            </div>#}
-{##}
-{#                            <div class="form-group">#}
-{#                                <label for="time">Time:</label>#}
-{#                                <input class="input" type="text" placeholder="HH:MM" id="time">#}
-{#                            </div>#}
-{#                        </div>#}
-
                         <div class="col-md-12 text-center">
                             <button type="submit" class="main-button">Send</button>
 {#                            <button type="submit" class="form_submission">Submit</button>#}
@@ -282,187 +239,37 @@
         </div>
     </div>
 
-{#<!-- Events -->#}
-{##}
-{#<div id="events" class="section">#}
-{##}
-{##}
-{#<!-- container -->#}
-{##}
-{#<div class="container">#}
-{##}
-{##}
-{#<!-- row -->#}
-{##}
-{#<div class="row">#}
-{##}
-{##}
-{#<!-- section header -->#}
-{##}
-{#<div class="section-header text-center">#}
-{##}
-{#<h4 class="sub-title">Special Event</h4>#}
-{##}
-{#<h2 class="title">Upcoming Event</h2>#}
-{##}
-{#</div>#}
-{##}
-{#<!-- /section header -->#}
-{##}
-{##}
-{#<!-- single event -->#}
-{##}
-{#<div class="col-md-6">#}
-{##}
-{#<div class="event">#}
-{##}
-{#<div class="event-img">#}
-{##}
-{#<img src="{% static 'img/event01.jpg' %}" alt="">#}
-{##}
-{#<div class="event-day">#}
-{##}
-{#<span>08<br>July</span>#}
-{##}
-{#</div>#}
-{##}
-{#</div>#}
-{##}
-{#<div class="event-content">#}
-{##}
-{#<p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>#}
-{##}
-{#<h3><a href="blog.html">te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</a></h3>#}
-{##}
-{#<p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>#}
-{##}
-{#</div>#}
-{##}
-{#</div>#}
-{##}
-{#</div>#}
-{##}
-{#<!-- /single event -->#}
-{##}
-{##}
-{#<!-- single event -->#}
-{##}
-{#<div class="col-md-6">#}
-{##}
-{#<div class="event">#}
-{##}
-{#<div class="event-img">#}
-{##}
-{#<img src="{% static 'img/event02.jpg' %}" alt="">#}
-{##}
-{#<div class="event-day">#}
-{##}
-{#<span>08<br>July</span>#}
-{##}
-{#</div>#}
-{##}
-{#</div>#}
-{##}
-{#<div class="event-content">#}
-{##}
-{#<p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>#}
-{##}
-{#<h3><a href="#">te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</a></h3>#}
-{##}
-{#<p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>#}
-{##}
-{#</div>#}
-{##}
-{#</div>#}
-{##}
-{#</div>#}
-{##}
-{#<!-- /single event -->#}
-{##}
-{##}
-{#<!-- single event -->#}
-{##}
-{#<div class="col-md-6">#}
-{##}
-{#<div class="event">#}
-{##}
-{#<div class="event-img">#}
-{##}
-{#<img src="{% static 'img/event02.jpg' %}" alt="">#}
-{##}
-{#<div class="event-day">#}
-{##}
-{#<span>08<br>July</span>#}
-{##}
-{#</div>#}
-{##}
-{#</div>#}
-{##}
-{#<div class="event-content">#}
-{##}
-{#<p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>#}
-{##}
-{#<h3><a href="#">te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</a></h3>#}
-{##}
-{#<p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>#}
-{##}
-{#</div>#}
-{##}
-{#</div>#}
-{##}
-{#</div>#}
-{##}
-{#<!-- /single event -->#}
-{##}
-{##}
-{#<!-- single event -->#}
-{##}
-{#<div class="col-md-6">#}
-{##}
-{#<div class="event">#}
-{##}
-{#<div class="event-img">#}
-{##}
-{#<img src="./img/event01.jpg" alt="">#}
-{##}
-{#<div class="event-day">#}
-{##}
-{#<span>08<br>July</span>#}
-{##}
-{#</div>#}
-{##}
-{#</div>#}
-{##}
-{#<div class="event-content">#}
-{##}
-{#<p><i class="fa fa-clock-o"></i> 8.00PM - 10.00PM</p>#}
-{##}
-{#<h3><a href="#">te vero tritani iuvaret vis. Nec odio periculis adipiscing an.</a></h3>#}
-{##}
-{#<p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>#}
-{##}
-{#</div>#}
-{##}
-{#</div>#}
-{##}
-{#</div>#}
-{##}
-{#<!-- /single event -->#}
-{##}
-{##}
-{#</div>#}
-{##}
-{#<!-- /row -->#}
-{##}
-{##}
-{#</div>#}
-{##}
-{#<!-- /container -->#}
-{##}
-{##}
-{#</div>#}
-{##}
-{#<!-- /Events -->#}
+
+<div id="events" class="section">
+
+<div class="container">
+<div class="row">
+<div class="section-header text-center">
+
+<h2 class="title">Recent Posts</h2>
+
+</div>
+
+    {% post_list as posts %}
+    {% for post in posts %}
+    <div class="col-md-4">
+        <div class="post">
+            <a class="post-img" href="blog-post.html"><img src={{ post.image.url }} alt=""></a>
+            <div class="post-body">
+                <div class="post-meta">
+                    <a class="post-category cat-2" href="category.html">{{ post.category.name }}</a>
+                    <span class="post-date">March 27, 2018</span>
+                </div>
+                <h3 class="post-title"><a href="blog-post.html">{{ post.title }}</a></h3>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+</div>
+
 
     <div id="contact" class="section">
         <div class="container">
